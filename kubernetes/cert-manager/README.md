@@ -159,8 +159,10 @@ kubectl apply -f .\kubernetes\services\
 # run on cloud gcp 
 kubectl apply -f .\kubernetes\cert-manager\service.yaml
 kubectl get pods
-# deploy an ingress route
-kubectl apply -f .\kubernetes\cert-manager\ingress.yaml
+# deploy an ingress route, required k8s version 1.19+ 
+kubectl apply -f .\kubernetes\cert-manager\ingress.yaml 
+# deploy an ingress route, required k8s version 1.14 - 1.18 
+kubectl apply -f .\kubernetes\cert-manager\ing.yaml
 
 ```
 
