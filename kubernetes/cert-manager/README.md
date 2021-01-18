@@ -154,7 +154,10 @@ kubectl describe clusterissuer letsencrypt-cluster-issuer
 
 ```
 kubectl apply -f .\kubernetes\deployments\
+# run on kind cluster (local) 
 kubectl apply -f .\kubernetes\services\
+# run on cloud gcp 
+kubectl apply -f .\kubernetes\cert-manager\service.yaml
 kubectl get pods
 # deploy an ingress route
 kubectl apply -f .\kubernetes\cert-manager\ingress.yaml
