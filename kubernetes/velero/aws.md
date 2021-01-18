@@ -26,8 +26,8 @@ Default output format: json
 # Create a Storage Bucket
 
 ```
-BUCKET=veleromarcel
-REGION=ap-southeast-2
+BUCKET=velerotomas
+REGION=eu-central-1
 aws s3api create-bucket --bucket $BUCKET --region $REGION --create-bucket-configuration LocationConstraint=$REGION
 ```
 
