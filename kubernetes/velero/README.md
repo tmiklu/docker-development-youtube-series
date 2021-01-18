@@ -16,7 +16,7 @@ Run a small `alpine linux` container where we can install and play with `velero`
 docker run -it --rm -v ${HOME}:/root/ -v ${PWD}:/work -w /work --net host alpine sh
 
 # install curl & kubectl
-apk add --no-cache curl vi
+apk add --no-cache curl 
 curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
 chmod +x ./kubectl
 mv ./kubectl /usr/local/bin/kubectl
