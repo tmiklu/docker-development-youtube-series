@@ -8,10 +8,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - marcel.guru
+    - tmiklu.online
     secretName: example-app-tls
   rules:
-  - host: marcel.guru
+  - host: tmiklu.online
     http:
       paths:
       - path: /
